@@ -6,7 +6,7 @@
 const char ALLOWED_OPENING_BRACKETS[] = {'{', '(', '['};
 const char ALLOWED_CLOSING_BRACKETS[] = {'}', ')', ']'};
 
-bool validateBrackets(std::string &input) {
+bool validateBrackets(std::string input) {
   Node *head = nullptr;
   for (auto &c : input) {
     for (int i = 0; i < 3; i++) {
@@ -40,7 +40,7 @@ bool getValues(int *a, int *b, Node *&top) {
   return true;
 }
 
-int solveONP(std::string &input) {
+int solveONP(std::string input) {
   Node *top = nullptr;
   int a, b, parsed;
   bool space = true;
@@ -97,14 +97,24 @@ int solveONP(std::string &input) {
   return peek(top);
 }
 
+void printAll(Node *top) {
+  while (!isEmpty(top))
+  {
+    std::cout << peek(top) << ", ";
+    pop(top);
+  }
+  
+  std::cout << std::endl;
+}
+
 int main() {
   Node *front = nullptr;
   Node *back = nullptr;
   enqueue(front, back, 5);
-  std::cout << getFront(front) << std::endl;
-  enqueue(front, back, 6);
+  enqueue(front, back, 8);
+  enqueue(front, back, 2);
+  enqueue(front, back, 10);
   std::cout << getFront(front) << std::endl;
   dequeue(front, back);
   std::cout << getFront(front) << std::endl;
-  std::cout << size(front) << std::endl;
 }
