@@ -1,0 +1,38 @@
+Demonstracja kolejnych podzialow i scalen:
+
+== 8 3 6 2 ==
+przed: 8 3 6 2 
+  podzial [0,4) -> [0,2) i [2,4)
+  podzial [0,2) -> [0,1) i [1,2)
+  scalanie [0,1) + [1,2): 8 | 3 
+  -> 3 8 
+  podzial [2,4) -> [2,3) i [3,4)
+  scalanie [2,3) + [3,4): 6 | 2 
+  -> 2 6 
+  scalanie [0,2) + [2,4): 3 8 | 2 6 
+  -> 2 3 6 8 
+po:    2 3 6 8 
+
+== dane losowe: 7 2 9 4 1 8 3 ==
+przed: 7 2 9 4 1 8 3 
+po:    1 2 3 4 7 8 9 
+
+== dane rosnace: 1 2 3 4 5 6 7 ==
+przed: 1 2 3 4 5 6 7 
+po:    1 2 3 4 5 6 7 
+
+== dane malejace: 7 6 5 4 3 2 1 ==
+przed: 7 6 5 4 3 2 1 
+po:    1 2 3 4 5 6 7 
+
+== powtarzajace sie wartosci: 5 2 8 2 1 5 8 ==
+przed: 5 2 8 2 1 5 8 
+po:    1 2 2 5 5 8 8 
+
+== jeden element: 42 ==
+przed: 42 
+po:    42 
+
+== pusta tablica ==
+przed: (pusta)
+po:    (pusta)

@@ -1,0 +1,19 @@
+=== Eksperyment 1: rozmiar danych (dane losowe) ===
+n          Insertion [ms]     Porownania   Merge [ms]     Porownania   Quick [ms]     Porownania
+------------------------------------------------------------------------------------------------
+100                 0.007           2606        0.016            541        0.009            644
+1000                0.690         249714        0.156           8698        0.107          10335
+5000               17.167        6211591        1.007          55243        0.581          68310
+10000              68.273       25168929        1.790         120482        1.210         153316
+50000            1617.468      624287161        8.726         718163        6.357         921295
+
+=== Eksperyment 2: charakter danych (n = 50000) ===
+Dane                  n          Insertion [ms]     Porownania   Merge [ms]     Porownania   Quick [ms]     Porownania
+----------------------------------------------------------------------------------------------------------------------
+losowe                50000            1511.644      624415635        9.480         718300        6.808         977460
+rosnace               50000               0.120          49999        4.132         382512        3.148         950423
+malejace              50000            2822.851     1249975000        3.743         401952        3.167         888533
+prawie posortowane    50000               0.113          50497        3.876         382838        3.129         963344
+
+Weryfikacja: wszystkie tablice posortowane poprawnie.
+Wyniki zapisano w pliku wyniki_zad3.csv

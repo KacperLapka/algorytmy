@@ -1,0 +1,28 @@
+eksperyment,dane,n,algorytm,czas_ms,porownania
+1,losowe,100,insertion,0.007270,2606
+1,losowe,100,merge,0.015891,541
+1,losowe,100,quick,0.008748,644
+1,losowe,1000,insertion,0.689722,249714
+1,losowe,1000,merge,0.155537,8698
+1,losowe,1000,quick,0.106889,10335
+1,losowe,5000,insertion,17.167312,6211591
+1,losowe,5000,merge,1.007487,55243
+1,losowe,5000,quick,0.580899,68310
+1,losowe,10000,insertion,68.273218,25168929
+1,losowe,10000,merge,1.790032,120482
+1,losowe,10000,quick,1.210341,153316
+1,losowe,50000,insertion,1617.467798,624287161
+1,losowe,50000,merge,8.726050,718163
+1,losowe,50000,quick,6.356899,921295
+2,losowe,50000,insertion,1511.644337,624415635
+2,losowe,50000,merge,9.480165,718300
+2,losowe,50000,quick,6.808276,977460
+2,rosnace,50000,insertion,0.120286,49999
+2,rosnace,50000,merge,4.131778,382512
+2,rosnace,50000,quick,3.148250,950423
+2,malejace,50000,insertion,2822.851262,1249975000
+2,malejace,50000,merge,3.742500,401952
+2,malejace,50000,quick,3.167031,888533
+2,prawie posortowane,50000,insertion,0.112650,50497
+2,prawie posortowane,50000,merge,3.875703,382838
+2,prawie posortowane,50000,quick,3.128768,963344

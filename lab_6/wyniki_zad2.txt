@@ -1,0 +1,37 @@
+=== Czesc A: pivot = ostatni element ===
+dane losowe: 7 2 9 4 1 8 3                    -> 1 2 3 4 7 8 9  (porownania: 13, zamiany: 4, maks. glebokosc: 5)
+dane rosnace: 1 2 3 4 5 6 7                   -> 1 2 3 4 5 6 7  (porownania: 21, zamiany: 0, maks. glebokosc: 7)
+dane malejace: 7 6 5 4 3 2 1                  -> 1 2 3 4 5 6 7  (porownania: 21, zamiany: 3, maks. glebokosc: 7)
+powtarzajace sie: 5 2 8 2 1 5 8               -> 1 2 2 5 5 8 8  (porownania: 17, zamiany: 4, maks. glebokosc: 6)
+jeden element: 42                             -> 42  (porownania: 0, zamiany: 0, maks. glebokosc: 1)
+pusta tablica                                 -> (pusta) (porownania: 0, zamiany: 0, maks. glebokosc: 0)
+
+=== Czesc B: porownanie strategii wyboru pivota ===
+Dane              n     Pivot    Porownania    Zamiany   Maks. glebokosc
+------------------------------------------------------------------------
+losowe          100   ostatni           630        307                13
+losowe          100    losowy           644        301                15
+losowe         1000   ostatni         10645       4726                23
+losowe         1000    losowy          9936       4674                21
+losowe         5000   ostatni         75945      37346                32
+losowe         5000    losowy         68294      32376                31
+losowe        10000   ostatni        153740      77197                30
+losowe        10000    losowy        151655      77301                32
+rosnace         100   ostatni          4950          0               100
+rosnace         100    losowy           642        108                14
+rosnace        1000   ostatni        499500          0              1000
+rosnace        1000    losowy         10995        988                22
+rosnace        5000   ostatni      12497500          0              5000
+rosnace        5000    losowy         73332       4982                33
+rosnace       10000   ostatni      49995000          0             10000
+rosnace       10000    losowy        159958       9990                34
+malejace        100   ostatni          4950         50               100
+malejace        100    losowy           615        348                12
+malejace       1000   ostatni        499500        500              1000
+malejace       1000    losowy         10355       4334                24
+malejace       5000   ostatni      12497500       2500              5000
+malejace       5000    losowy         66715      24592                25
+malejace      10000   ostatni      49995000       5000             10000
+malejace      10000    losowy        147888      59822                29
+
+Weryfikacja: wszystkie tablice posortowane poprawnie.

@@ -1,0 +1,19 @@
+
+=== tablica z polecenia ===
+tablica:     8 3 1 7 4 9 2 
+posortowana: 1 2 3 4 7 8 9 
+k=1: mergeSelect=1 (porownania: 14), quickSelect=1 (porownania: 6)  OK
+k=3: mergeSelect=3 (porownania: 14), quickSelect=3 (porownania: 11)  OK
+k=7: mergeSelect=9 (porownania: 14), quickSelect=9 (porownania: 10)  OK
+
+=== tablica z powtorzeniami ===
+tablica:     5 2 8 2 1 5 8 
+posortowana: 1 2 2 5 5 8 8 
+k=1: mergeSelect=1 (porownania: 13), quickSelect=1 (porownania: 10)  OK
+k=3: mergeSelect=2 (porownania: 13), quickSelect=2 (porownania: 14)  OK
+k=7: mergeSelect=8 (porownania: 13), quickSelect=8 (porownania: 12)  OK
+
+=== Test na duzej tablicy (n = 100000, k = 50000) ===
+mergeSelect: wynik=499557, porownania=1536372, czas=18.869 ms
+quickSelect: wynik=499557, porownania=320269, czas=1.040 ms
+Weryfikacja: wyniki zgodne.
